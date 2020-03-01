@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+	padding: 0;
+	border: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1;
+}
+
+
+    /* HEADER */
+
+
+.header {
+    width: 1020px;
+    height: 89px;
+    background-color: #2d303a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/* Logo */
+
+.logo_singolo {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    position: absolute;
+    bottom: 33px;
+    left: 40px;
+    letter-spacing: 0.2px;
+}
+
+.star {
+    color: #f06c64;
+}
+
+/* Nav */
+
+.nav {
+    display: inline-block;
+    width: 375px;
+    height: 9px;
+    position: absolute;
+    right: 36px;
+    bottom: 38px;
+    word-spacing: 26.5px;
+    font-size: 12px;
+    font-family: "Lato";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    color:#ffffff;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.nav_link:hover {
+    color: #f06c64;
+}
+
+/* Header Bottom */
+
+.header_bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+    position: absolute;
+    top: 89px;
+}
+
+
+    /* SLIDER */
+
+
+.slider {
+    width: 1020px;
+    height: 600px;
+    background-color: #f06c64;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/* Iphones */
+
+.iphone_vertical {
+    position: absolute;
+    bottom: 37px;
+    left: 110px;
+}
+
+.iphone_horizontal {
+    position: absolute;
+    top: 69px;
+    right: 80px;
+}
+
+/* Chevs */
+
+.chevleft {
+    position: absolute;
+    top: 281px;
+    left: 42px;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.chevright {
+    position: absolute;
+    top: 281px;
+    right: 40px;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.chevs:hover {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+/* Slider bottom */
+
+.slider_bottom {
+    height: 6px;
+    width: 1020px;
+    background-color: #ea676b;
+    position: absolute;
+    top: 594px;
+    z-index: 9;
+}
+
+
+    /* SERVICES */
+
+
+.services {
+    width: 1020px;
+    height: 495px;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 695px;
+    left: 0;
+    right: 0;
+}          
+
+/* Our services */
+
+.our_services {
+    font-size: 30px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: absolute;
+    top: 59px;
+    left: 40px;
+    letter-spacing: 0.25px;    
+}
+
+.description {
+    width: 940px;
+    height: 57px;
+    font-size: 17px;
+    line-height: 31px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify;
+    position: absolute;
+    bottom: 325px;
+    left: 40px;
+    letter-spacing: 0.2px;
+}
+
+
+    /* SERVICES GRID */
+
+
+.container {
+    display: grid;
+    width: 938px;
+    height: 205px;
+    position: absolute;
+    top: 220px;
+    left: 41px;
+    grid-template-areas: "cd ii lita"
+                         "rl sup flas";
+    grid-template-rows: 83px 83px;
+    grid-template-columns: repeat(3, 299px);
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.cd {
+    grid-area: cd;
+    width: 299px;
+}
+
+.ii {
+    grid-area: ii;
+    width: 299px;
+}
+
+.lita {
+    grid-area: lita;
+    width: 299px;
+}
+
+.rl {
+    grid-area: rl;
+    width: 299px;
+}
+
+.sup {
+    grid-area: sup;
+    width: 299px;
+}
+
+.flas {
+    grid-area: flas;
+    width: 299px;
+}
+
+.img {
+    position: relative;
+    float: left;
+}
+
+.texthead {
+    letter-spacing: 0.01em;
+    font-size: 18px;
+    line-height: 14px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: relative;
+    left: 18px;
+    top: auto;
+}
+
+.text {
+    width: 220px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    position: relative;
+    top: 12px;
+    left: 18px;
+    float: left;
+}
+
+/* Services bottom */
+
+.servicesbottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 495px;
+}
