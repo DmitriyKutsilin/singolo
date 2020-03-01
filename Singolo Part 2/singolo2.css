@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+	padding: 0;
+	border: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1;
+}
+
+
+    /* PORTFOLIO */
+
+
+.portfolio {
+    width: 1020px;
+    height: 864px;
+    background-color: #2d303a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10
+}
+
+/* Heading */
+
+.port_heading {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: absolute;
+    top: 69px;
+    left: 40px;
+    letter-spacing: 0.6px;
+}
+
+.port_text {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    position: absolute;
+    top: 114px;
+    left: 40px;
+    word-spacing: -0.08em;
+}
+
+/* Nav buttons */
+
+.port_nav {
+    display: inline-block;
+    position: absolute;
+    top: 155px;
+    left: 41px;
+}
+
+.navlink {
+    margin-right: 6px;
+    padding: 3px 6px;
+    border-radius: 5px;
+    border: 1px solid #666d89;
+    text-align: left;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.navlink:hover {
+    color: #dedede;
+    border: 1px solid #c5c5c5;
+}
+
+/* Images */
+
+.container {
+    display: grid;
+    width: 940px;
+    height: 605px;
+    position: absolute;
+    top: 196px;
+    left: 40px;
+    grid-template-areas: "one two three four"
+                         "five six seven eight"
+                         "nine ten eleven twelve";
+    grid-template-rows: repeat (3, 187px);
+    grid-template-columns: repeat (3, 220px);
+    justify-content: space-between;
+    align-content: space-between;
+}       
+
+.portfolio_img {
+    width: 220px;
+    height: 187px;
+}
+
+.one {
+   grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven; 
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.ten {
+    grid-area: ten;
+}
+
+.eleven {
+    grid-area: eleven;
+}
+
+.twelve {
+    grid-area: twelve;
+}
+
+/* Portfolio Bottom */
+
+.portfolio_bottom {
+    position: absolute;
+    top: 864px;
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+
+
+/* ABOUT US */
+
+
+.about {
+    position: relative;
+    top: 870px;
+    width: 1020px;
+    height: 728px;
+    background-color: #f2f2f2;
+}
+
+.about_heading {
+    position: absolute;
+    top: 68px;
+    left: 40px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.7px; 
+}
+
+.about_text {
+    position: absolute;
+    top: 113px;
+    left: 40px;
+    width: 940px;
+    height: 57px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: 0.2px;
+}
+
+/* People Grid */
+
+.container2 {
+    display: grid;
+    width: 940px;
+    height: 435px;
+    position: absolute;
+    top: 218px;
+    left: 40px;
+    grid-template-areas: "1st 2nd 3rd";
+    grid-template-columns: repeat (3, 300px);
+    grid-template-rows: 100%;
+    justify-content: space-between;
+}
+
+.first {
+    grid-area: 1st;
+    width: 300px;
+}
+
+.second {
+    grid-area: 2nd;
+    width: 300px;
+}
+
+.third {
+    grid-area: 3rd;
+    width: 300px;
+}
+
+.img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.name {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: relative;
+    top: 13px;
+    word-spacing: 0.07em;
+}
+
+.description {
+    width: 300px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    position: relative;
+    top: 23.5px;
+}
+
+.icons {
+    display: inline-block;
+    width: 200px;
+    height: 32px;
+    position: relative;
+    top: 57px;
+    left: 1px;
+}
+
+.icons_img {
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: .0.5s ease-in-out;
+    transition: .0.5s ease-in-out;
+}
+
+.icons_img:hover {
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
+}
+
+/* About bottom */
+
+.about_bottom {
+    position: relative;
+    top: 728px;
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+}
