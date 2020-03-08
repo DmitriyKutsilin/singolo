@@ -1,0 +1,868 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+	padding: 0;
+	border: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1;
+}
+
+
+    /* HEADER */
+
+
+.header {
+    width: 1020px;
+    height: 89px;
+    background-color: #2d303a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/* Logo */
+
+.logo_singolo {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    position: absolute;
+    bottom: 33px;
+    left: 40px;
+    letter-spacing: 0.2px;
+}
+
+.star {
+    color: #f06c64;
+}
+
+/* Nav */
+
+.nav {
+    display: inline-block;
+    width: 375px;
+    height: 9px;
+    position: absolute;
+    right: 36px;
+    bottom: 38px;
+    word-spacing: 26.5px;
+    font-size: 12px;
+    font-family: "Lato";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    color:#ffffff;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.nav_link:hover {
+    color: #f06c64;
+}
+
+/* Header Bottom */
+
+.header_bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+    position: absolute;
+    top: 89px;
+}
+
+
+    /* SLIDER */
+
+
+.slider {
+    width: 1020px;
+    height: 594px;
+    background-color: #f06c64;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/* Iphones */
+
+.iphone_vertical {
+    position: absolute;
+    bottom: 31px;
+    left: 110px;
+}
+
+.iphone_horizontal {
+    position: absolute;
+    top: 69px;
+    right: 80px;
+}
+
+/* Chevs */
+
+.chevleft {
+    position: absolute;
+    top: 281px;
+    left: 42px;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.chevright {
+    position: absolute;
+    top: 281px;
+    right: 40px;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.chevs:hover {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+/* Slider bottom */
+
+.slider_bottom {
+    height: 6px;
+    width: 1020px;
+    background-color: #ea676b;
+    position: absolute;
+    top: 594px;
+    z-index: 9;
+}
+
+
+    /* SERVICES */
+
+
+.services {
+    width: 1020px;
+    height: 495px;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 695px;
+    left: 0;
+    right: 0;
+}          
+
+/* Our services */
+
+.our_services {
+    font-size: 30px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: absolute;
+    top: 59px;
+    left: 40px;
+    letter-spacing: 0.25px;    
+}
+
+.serv_description {
+    width: 940px;
+    height: 57px;
+    font-size: 17px;
+    line-height: 31px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify;
+    position: absolute;
+    bottom: 325px;
+    left: 40px;
+    letter-spacing: 0.2px;
+}
+
+
+    /* SERVICES GRID */
+
+
+.container {
+    display: grid;
+    width: 938px;
+    height: 205px;
+    position: absolute;
+    top: 220px;
+    left: 41px;
+    grid-template-areas: "cd ii lita"
+                         "rl sup flas";
+    grid-template-rows: 83px 83px;
+    grid-template-columns: repeat(3, 299px);
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.cd {
+    grid-area: cd;
+    width: 299px;
+}
+
+.ii {
+    grid-area: ii;
+    width: 299px;
+}
+
+.lita {
+    grid-area: lita;
+    width: 299px;
+}
+
+.rl {
+    grid-area: rl;
+    width: 299px;
+}
+
+.sup {
+    grid-area: sup;
+    width: 299px;
+}
+
+.flas {
+    grid-area: flas;
+    width: 299px;
+}
+
+.container_img {
+    position: relative;
+    float: left;
+}
+
+.texthead {
+    letter-spacing: 0.01em;
+    font-size: 18px;
+    line-height: 14px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: relative;
+    left: 18px;
+    top: auto;
+}
+
+.text {
+    width: 220px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    position: relative;
+    top: 12px;
+    left: 18px;
+    float: left;
+}
+
+/* Services bottom */
+
+.servicesbottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 495px;
+}
+
+
+/* PORTFOLIO */
+
+
+.portfolio {
+    width: 1020px;
+    height: 864px;
+    background-color: #2d303a;
+    position: absolute;
+    top: 1195px;
+    left: 0;
+    right: 0;
+    z-index: 10
+}
+
+/* Heading */
+
+.port_heading {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: absolute;
+    top: 69px;
+    left: 40px;
+    letter-spacing: 0.6px;
+}
+
+.port_text {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    position: absolute;
+    top: 114px;
+    left: 40px;
+    word-spacing: -0.08em;
+}
+
+/* Nav buttons */
+
+.port_nav {
+    display: inline-block;
+    position: absolute;
+    top: 154px;
+    left: 41px;
+}
+
+.port_navlink {
+    margin-right: 6px;
+    padding: 3px 6px;
+    border-radius: 5px;
+    border: 1px solid #666d89;
+    text-align: left;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.port_navlink:hover {
+    color: #dedede;
+    border: 1px solid #c5c5c5;
+}
+
+/* Images */
+
+.container2 {
+    display: grid;
+    width: 940px;
+    height: 605px;
+    position: absolute;
+    top: 196px;
+    left: 40px;
+    grid-template-areas: "one two three four"
+                         "five six seven eight"
+                         "nine ten eleven twelve";
+    grid-template-rows: repeat (3, 187px);
+    grid-template-columns: repeat (3, 220px);
+    justify-content: space-between;
+    align-content: space-between;
+}       
+
+.portfolio_img {
+    width: 220px;
+    height: 187px;
+}
+
+.one {
+   grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven; 
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.ten {
+    grid-area: ten;
+}
+
+.eleven {
+    grid-area: eleven;
+}
+
+.twelve {
+    grid-area: twelve;
+}
+
+/* Portfolio Bottom */
+
+.portfolio_bottom {
+    position: absolute;
+    top: 864px;
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+
+
+/* ABOUT US */
+
+
+.about {
+    position: absolute;
+    top: 2065px;
+    width: 1020px;
+    height: 728px;
+    background-color: #f2f2f2;
+}
+
+.about_heading {
+    position: absolute;
+    top: 68px;
+    left: 40px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.7px; 
+}
+
+.about_text {
+    position: absolute;
+    top: 113px;
+    left: 40px;
+    width: 940px;
+    height: 57px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: 0.2px;
+}
+
+/* People Grid */
+
+.container3 {
+    display: grid;
+    width: 940px;
+    height: 435px;
+    position: absolute;
+    top: 218px;
+    left: 40px;
+    grid-template-areas: "1st 2nd 3rd";
+    grid-template-columns: repeat (3, 300px);
+    grid-template-rows: 100%;
+    justify-content: space-between;
+}
+
+.first {
+    grid-area: 1st;
+    width: 300px;
+}
+
+.second {
+    grid-area: 2nd;
+    width: 300px;
+}
+
+.third {
+    grid-area: 3rd;
+    width: 300px;
+}
+
+.container3_img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.name {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: relative;
+    top: 13px;
+    word-spacing: 0.07em;
+}
+
+.description {
+    width: 300px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    position: relative;
+    top: 23.5px;
+}
+
+.icons {
+    display: inline-block;
+    width: 200px;
+    height: 32px;
+    position: relative;
+    top: 57px;
+    left: 1px;
+}
+
+.icons_img {
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: .0.5s ease-in-out;
+    transition: .0.5s ease-in-out;
+}
+
+.icons_img:hover {
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
+}
+
+/* About bottom */
+
+.about_bottom {
+    position: relative;
+    top: 728px;
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+}
+
+
+/* QUOTE PART */
+
+
+.quote_part {
+    width: 1020px;
+    height: 648px;
+    background-color: #f06c64;
+    position: absolute;
+    top: 734px;
+    left: 0;
+    right: 0;
+    z-index: 10
+}
+
+/* Quote heading & text */
+
+.quote_heading {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: absolute;
+    top: 68px;
+    left: 40px;
+    letter-spacing: 0.2px;
+}
+
+.quote_text {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify;
+    position: absolute;
+    top: 113px;
+    left: 40px;
+    letter-spacing: -0.23px;
+}
+
+.c_heading {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: absolute;
+    top: 216.5px;
+    left: 680px;
+    letter-spacing: 0.25px;
+}
+
+.text_contacts {
+    width: 300px;
+    height: 175px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    position: absolute;
+    top: 244.5px;
+    left: 680px;
+    letter-spacing: -0.03px;
+    text-decoration: none;
+}
+
+.location_img {
+   position: absolute;
+   top: 113px;
+   left: 3px;
+}
+
+.phone_img {
+   position: absolute;
+   top: 134px;
+   left: 1px;
+}
+
+.mail_img {
+   position: absolute;
+   top: 159px;
+   left: 0px;
+}
+
+.location {
+    position: absolute;
+    top: 108px;
+    left: 23px;
+}
+
+.phone {
+    position: absolute;
+    top: 129px;
+    left: 23px;
+    text-decoration: none;
+    color: #f0d8d9;
+}
+
+.mail {
+    position: absolute;
+    top: 151px;
+    left: 23px;
+    text-decoration: none;
+    color: #f0d8d9;
+}
+
+.form {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+#name {
+    width: 619px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    position: absolute;
+    top: 217px;
+    left: 40px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-indent: 15px;
+}
+
+#name::placeholder {
+    color: #f48c8f;
+    position: relative;
+}
+
+#email {
+    width: 619px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    position: absolute;
+    top: 271px;
+    left: 40px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-indent: 15px;
+}
+
+#email::placeholder {
+    color: #f48c8f;
+    position: relative;
+}
+
+#subject {
+    width: 619px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    position: absolute;
+    top: 325px;
+    left: 40px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-indent: 15px;
+}
+
+#subject::placeholder {
+    color: #f48c8f;
+    position: relative;
+}
+
+#describe {
+    width: 619px;
+    height: 202px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    position: absolute;
+    top: 379px;
+    left: 40px; 
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-indent: 15px;
+    padding-top: 6.5px;
+}
+
+#describe::placeholder {
+    color: #f48c8f;
+    position: relative;
+}
+
+#submit {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 600px;
+    left: 299.5px;
+    border-radius: 5px;
+    background-color: #f0d8d9;
+    color: #d6564f;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Bottom line */
+
+.quote_bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+    position: absolute;
+    top: 648px;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    width: 1020px;
+    height: 76px;
+    background-color: #2d303a;
+    position: absolute;
+    top: 654px;
+}
+
+.copyright {
+    color: #666d89;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    left: 42px;
+    top: 26.5px;
+    letter-spacing: -0.2px;
+}
+
+.social_icons {
+    display: inline-block;
+    width: 162px;
+    height: 32px;
+    position: relative;
+    left: 828px;
+}
+
+.social_icons_img {
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: .0.5s ease-in-out;
+    transition: .0.5s ease-in-out;
+}
+.social_icons_img:hover {
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
+}
+
